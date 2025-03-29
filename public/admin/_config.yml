@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: TUO_USERNAME/TUO_REPO  # Sostituisci con il tuo repository GitHub
+  branch: main
+  auth_scope: repo
+
+media_folder: "public/images"  # Dove saranno salvate le immagini
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pagine"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+
