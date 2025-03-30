@@ -8,7 +8,7 @@ const nextConfig = {
   },
   // Configurazione per il deploy su Netlify (se necessario)
   // ...altre impostazioni
-  output: 'export',
+  // output: 'export', // Commenta o rimuovi questa riga
 }
 
 module.exports = nextConfig
