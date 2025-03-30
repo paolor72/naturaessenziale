@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  // Altre configurazioni vanno qui
-  // Rimuovi completamente la proprietà 'target'
+  reactStrictMode: true, // Abilita la modalità rigorosa di React
   images: {
-    domains: ['example.com'], // Esempio di configurazione per le immagini
+    domains: ['example.com'], // Aggiungi qui i domini da cui puoi caricare immagini
   },
-  // Configurazione per il deploy su Netlify (se necessario)
-  // ...altre impostazioni
-  // output: 'export', // Commenta o rimuovi questa riga
+  // Rimuovi completamente la proprietà 'output' se non stai esportando staticamente
+  // output: 'export', // Questa riga è commentata per evitare conflitti
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
