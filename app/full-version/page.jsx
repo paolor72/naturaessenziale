@@ -65,13 +65,13 @@ export default function Home() {
                             <span className="text-green-600"> 🍃🦔</span>
                         </p>
                         <p className="text-gray-700 mb-6">
-                            E' un esempio di imprenditoria femminile, ed utilizza solo energie rinnovabili: attrezzi elettrici e a trazione animale.
+                            E&apos; un esempio di imprenditoria femminile, ed utilizza solo energie rinnovabili: attrezzi elettrici e a trazione animale.
                         </p>
                         <p className="text-gray-700 mb-6">
-                            <span className="text-purple-600">🐎</span> La mia collega più importante è Athena, una giumenta di razza Murgese, che si occupa dello sfalcio naturale dell'erba, della produzione di letame di prima qualità per nutrire il suolo e del traino di piccoli attrezzi agricoli rubati alla ruggine e restituiti al lavoro.
+                            <span className="text-purple-600">🐎</span> La mia collega più importante è Athena, una giumenta di razza Murgese, che si occupa dello sfalcio naturale dell&apos;erba, della produzione di letame di prima qualità per nutrire il suolo e del traino di piccoli attrezzi agricoli rubati alla ruggine e restituiti al lavoro.
                         </p>
                         <p className="text-gray-700">
-                            Natura Essenziale significa seguire la propria natura, mantenendo rispetto verso la Grande Natura; significa distillare l'olio essenziale di lavanda, ma anche vivere dell'essenziale, senza fronzoli e saper cogliere l'Essenza della Vita. Per questo mi piace definire il mio progetto come agricoltura meditativa.<span className="text-purple-600">🧘🏻‍♀️</span>
+                            Natura Essenziale significa seguire la propria natura, mantenendo rispetto verso la Grande Natura; significa distillare l&apos;olio essenziale di lavanda, ma anche vivere dell&apos;essenziale, senza fronzoli e saper cogliere l&apos;Essenza della Vita. Per questo mi piace definire il mio progetto come agricoltura meditativa.<span className="text-purple-600">🧘🏻‍♀️</span>
                         </p>
                     </div>
                 </div>
