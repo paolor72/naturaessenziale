@@ -37,23 +37,12 @@ User uploads are disabled in this site. To run your own and try it out:
 </a>
 `;
 
-export default async function Page() {
+const Page = () => {
     return (
-        <>
-            <section className="flex flex-col gap-6 sm:gap-8">
-                <ContextAlert
-                    addedChecksFunction={(ctx) => {
-                        return uploadDisabled ? uploadDisabledText : null;
-                    }}
-                />
-                <h1>Blobs x Blobs</h1>
-            </section>
-            {!!getNetlifyContext() && (
-                <div className="flex flex-col gap-8">
-                    <Markdown content={explainer} />
-                    <ShapeEditor />
-                </div>
-            )}
-        </>
+        <div>
+            <h1>Benvenuto!</h1>
+        </div>
     );
-}
+};
+
+export default Page;
