@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natura Essenziale - Oli essenziali artigianali da Meldola</title>
+    <meta name="description" content="Oli essenziali artigianali di alta qualità da Meldola">
+    
+    <!-- Tailwind CDN per semplicità (in produzione sarebbe meglio usare una versione ottimizzata) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lavender: {
+                            100: '#f0e6ff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <main class="min-h-screen">
+        <!-- Menu di Navigazione -->
+        <nav class="w-full bg-white shadow-sm">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-center h-16">
+                    <div class="flex space-x-8">
+                        <a href="#" class="text-purple-900 hover:text-purple-700 transition-colors">
+                            Home
+                        </a>
+                        <a href="#chi-sono" class="text-purple-900 hover:text-purple-700 transition-colors">
+                            Chi Sono
+                        </a>
+                        <a href="#ordina" class="text-purple-900 hover:text-purple-700 transition-colors">
+                            Ordini
+                        </a>
+                        <a href="#contatti" class="text-purple-900 hover:text-purple-700 transition-colors">
+                            Contatti
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-purple-100 to-lavender-100">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-5xl md:text-6xl font-bold text-purple-900 mb-4">
+                    Natura Essenziale
+                </h1>
+                <p class="text-xl md:text-2xl text-purple-800 mb-8">
+                    Oli essenziali artigianali di alta qualità da Meldola
+                </p>
+                <a 
+                    href="#ordina" 
+                    class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors text-sm"
+                >
+                    Scopri i nostri prodotti
+                </a>
+            </div>
+        </section>
+
+        <!-- Chi Sono Section -->
+        <section id="chi-sono" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-purple-900 mb-12">
+                    Chi Sono
+                </h2>
+                <div class="max-w-3xl mx-auto prose prose-lg">
+                    <p class="text-gray-700 mb-6">
+                        Mi chiamo Claudia Romanini e, a fine del 2023, ho avviato una piccolissima azienda agricola in Romagna.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Il terreno è di proprietà, è di circa 1 ettaro, si trova a Meldola (FC) ed è stato da me impiantato a
+                        <span class="text-purple-600"> 🪻LAVANDULA ANGUSTIFOLIA varietà MATHERONNE.🪻</span>
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        Essendo appena agli inizi, non ho ancora molto da dire, non ho una storia dietro le spalle.
+                        Però ho gli occhi puntati sul futuro: la mia piccolissima azienda non è certificata ma i miei intenti rispecchiano 
+                        <span class="text-green-600"> 🐝🐞 l'AGRICOLTURA RIGENERATIVA</span> e sto studiando e applicando i metodi biodinamici 
+                        <span class="text-green-600"> 🍃🦔</span>
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        E' un esempio di imprenditoria femminile, ed utilizza solo energie rinnovabili: attrezzi elettrici e a trazione animale.
+                    </p>
+                    <p class="text-gray-700 mb-6">
+                        <span class="text-purple-600">🐎</span> La mia collega più importante è Athena, una giumenta di razza Murgese, che si occupa dello sfalcio naturale dell'erba, della produzione di letame di prima qualità per nutrire il suolo e del traino di piccoli attrezzi agricoli rubati alla ruggine e restituiti al lavoro.
+                    </p>
+                    <p class="text-gray-700">
+                        Natura Essenziale significa seguire la propria natura, mantenendo rispetto verso la Grande Natura; significa distillare l'olio essenziale di lavanda, ma anche vivere dell'essenziale, senza fronzoli e saper cogliere l'Essenza della Vita. Per questo mi piace definire il mio progetto come agricoltura meditativa.<span class="text-purple-600">🧘🏻‍♀️</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Come Ordinare Section -->
+        <section id="ordina" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-purple-900 mb-12">
+                    I Nostri Oli Essenziali
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Prodotto 1 - Lavanda -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative h-64">
+                            <img
+                                src="images/lavanda.jpg"
+                                alt="Olio essenziale di lavanda"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-purple-900 mb-2">
+                                Olio Essenziale di Lavanda
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Estratto artigianalmente dalle nostre piante di lavanda
+                            </p>
+                            <a 
+                                href="#contatti"
+                                class="bg-purple-600 text-white px-4 py-1.5 rounded-full hover:bg-purple-700 transition-colors inline-block text-sm"
+                            >
+                                Ordina ora
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Prodotto 2 - Alloro -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative h-64">
+                            <img
+                                src="images/alloro.jpg"
+                                alt="Olio essenziale di alloro"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-purple-900 mb-2">
+                                Olio Essenziale di Alloro
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Estratto dalle nostre piante di alloro
+                            </p>
+                            <a 
+                                href="#contatti"
+                                class="bg-purple-600 text-white px-4 py-1.5 rounded-full hover:bg-purple-700 transition-colors inline-block text-sm"
+                            >
+                                Ordina ora
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Prodotto 3 - Rosmarino -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative h-64">
+                            <img
+                                src="images/rosmarino.jpg"
+                                alt="Olio essenziale di rosmarino"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-purple-900 mb-2">
+                                Olio Essenziale di Rosmarino
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Estratto dalle nostre piante di rosmarino
+                            </p>
+                            <a 
+                                href="#contatti"
+                                class="bg-purple-600 text-white px-4 py-1.5 rounded-full hover:bg-purple-700 transition-colors inline-block text-sm"
+                            >
+                                Ordina ora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <p class="text-xl text-gray-700 mb-8">
+                        Contattaci per ricevere i tuoi oli essenziali
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- WhatsApp -->
+                        <div class="bg-purple-50 rounded-lg p-6 shadow-lg">
+                            <div class="text-4xl mb-4">
+                                📱
+                            </div>
+                            <h3 class="text-2xl font-semibold text-purple-900 mb-3">
+                                WhatsApp
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Scrivici su WhatsApp per ricevere informazioni sui prezzi e effettuare il tuo ordine
+                            </p>
+                            <a 
+                                href="https://wa.me/+393XXXXXXXXX" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition-colors inline-block w-full text-center"
+                            >
+                                Contattaci su WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="bg-purple-50 rounded-lg p-6 shadow-lg">
+                            <div class="text-4xl mb-4">
+                                ✉️
+                            </div>
+                            <h3 class="text-2xl font-semibold text-purple-900 mb-3">
+                                Email
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Inviaci una email per ricevere il nostro catalogo completo e i prezzi
+                            </p>
+                            <a 
+                                href="mailto:info@naturaessenziale.it"
+                                class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition-colors inline-block w-full text-center"
+                            >
+                                Scrivici una Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form di Contatto -->
+        <section id="contatti" class="py-20 bg-purple-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center text-purple-900 mb-12">
+                    Contattaci
+                </h2>
+                <div class="max-w-2xl mx-auto">
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-purple-900">
+                                Nome
+                            </label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                class="mt-1 block w-full rounded-md border-purple-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 p-2 border"
+                            />
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-purple-900">
+                                Email
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="mt-1 block w-full rounded-md border-purple-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 p-2 border"
+                            />
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-purple-900">
+                                Messaggio
+                            </label>
+                            <textarea
+                                name="message"
+                                id="message"
+                                rows="4"
+                                required
+                                class="mt-1 block w-full rounded-md border-purple-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 p-2 border"
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors"
+                        >
+                            Invia Messaggio
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-purple-900 text-white py-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>© 2025 Natura Essenziale - Tutti i diritti riservati</p>
+                <p class="mt-2">Azienda Agricola di Claudia Romanini - Meldola (FC)</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
