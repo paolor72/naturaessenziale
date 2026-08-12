@@ -19,71 +19,53 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 <!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>{title}</title>
+    <title>{title}</title>
 
-  <meta
-    name="description"
-    content={description}
-  />
+    <meta name="description" content={description} />
 
-  <link
-    rel="canonical"
-    href={canonicalURL}
-  />
+    <link rel="canonical" href={canonicalURL} />
 
-  <meta
-    name="robots"
-    content="index, follow"
-  />
+    <meta name="robots" content="index, follow" />
 
-  <meta
-    name="theme-color"
-    content="#4E3F92"
-  />
+    <meta name="theme-color" content="#4E3F92" />
 
-  <!-- Open Graph -->
-  <meta
-    property="og:type"
-    content="website"
-  />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
 
-  <meta
-    property="og:locale"
-    content="it_IT"
-  />
+    <meta property="og:locale" content="it_IT" />
 
-  <meta
-    property="og:site_name"
-    content="Natura Essenziale"
-  />
+    <meta property="og:site_name" content="Natura Essenziale" />
 
-  <meta
-    property="og:title"
-    content={title}
-  />
+    <meta property="og:title" content={title} />
 
-  <meta
-    property="og:description"
-    content={description}
-  />
+    <meta property="og:description" content={description} />
 
-  <meta
-    property="og:url"
-    content={canonicalURL}
-  />
-</head>
-  <body class="bg-ne-bianco text-ne-nero font-sans antialiased">
-    <slot />
-  </body>
+    <meta property="og:url" content={canonicalURL} />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6NB01L5TM"
+    ></script>
+
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+      gtag("config", "G-C6NB01L5TM");
+    </script>
+  </head>
 </html>
+<body class="bg-ne-bianco text-ne-nero font-sans antialiased">
+  <slot />
+</body>
