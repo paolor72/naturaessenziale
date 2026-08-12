@@ -1,10 +1,18 @@
+---
+const marketMessage =
+  "Ciao, ho visto Natura Essenziale e vorrei venire a trovarti al mercato di Forlì.";
+
+const marketWhatsapp =
+  "https://wa.me/393515770877?text=" + encodeURIComponent(marketMessage);
+---
+
 <section id="incontro" class="bg-ne-bianco text-ne-indaco">
   <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-28">
-
     <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-20">
-
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
+        >
           Vieni a conoscermi
         </p>
 
@@ -12,10 +20,12 @@
           Le piante si conoscono meglio dal vivo
         </h2>
 
-        <div class="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-ne-viola-spento sm:mt-8 sm:space-y-5 sm:text-lg">
+        <div
+          class="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-ne-viola-spento sm:mt-8 sm:space-y-5 sm:text-lg"
+        >
           <p>
-            Puoi leggere di una pianta. Puoi guardare una fotografia.
-            Puoi conoscere le caratteristiche di un olio essenziale.
+            Puoi leggere di una pianta. Puoi guardare una fotografia. Puoi
+            conoscere le caratteristiche di un olio essenziale.
           </p>
 
           <p class="text-xl font-semibold text-ne-indaco sm:text-2xl">
@@ -23,18 +33,15 @@
           </p>
 
           <p>
-            Puoi confrontare due profumi, testare un idrolato sulla pelle,
-            farmi una domanda e raccontarmi come pensi di utilizzare
-            un prodotto.
+            Puoi confrontare due profumi, testare un idrolato sulla pelle, farmi
+            una domanda e raccontarmi come pensi di utilizzare un prodotto.
           </p>
 
-          <p>
-            Possiamo capire insieme se è davvero ciò che stavi cercando.
-          </p>
+          <p>Possiamo capire insieme se è davvero ciò che stavi cercando.</p>
 
           <p>
-            Per questo il mercato di Forlì per me non è soltanto
-            un luogo dove vendere.
+            Per questo il mercato di Forlì per me non è soltanto un luogo dove
+            vendere.
           </p>
         </div>
       </div>
@@ -45,26 +52,22 @@
         </p>
 
         <div class="mt-8 space-y-2 text-ne-viola-spento">
-          <p class="font-semibold text-ne-indaco">
-            Ogni sabato mattina
-          </p>
-          <p>
-            Forlì · di fronte ai Musei San Domenico
-          </p>
-          <p>
-            Da ottobre a marzo
-          </p>
+          <p class="font-semibold text-ne-indaco">Ogni sabato mattina</p>
+
+          <p>Forlì · di fronte ai Musei San Domenico</p>
+
+          <p>Da ottobre a marzo</p>
         </div>
 
         <a
-          href="#mercato"
-          class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-ne-indaco px-6 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-viola-spento sm:mt-8 sm:w-auto sm:px-8"
+          href={marketWhatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-8 inline-flex items-center justify-center rounded-full bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-viola-spento"
         >
-          Ci vediamo sabato mattina
+          Ci vediamo sabato
         </a>
       </div>
-
     </div>
-
   </div>
 </section>
