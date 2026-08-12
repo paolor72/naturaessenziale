@@ -1,0 +1,99 @@
+---
+const marketMessage =
+  "Ciao, ho visto Natura Essenziale e vorrei sapere dove posso trovarti al mercato di Forlì.";
+
+const marketWhatsapp =
+  "https://wa.me/393515770877?text=" + encodeURIComponent(marketMessage);
+---
+
+<section id="mercato" class="bg-ne-viola-spento text-ne-bianco">
+  <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-28">
+    <div class="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-start lg:gap-12">
+      <div>
+        <p
+          class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
+        >
+          Il prossimo incontro
+        </p>
+
+        <h2 class="text-4xl font-bold leading-tight sm:text-5xl">
+          Ci vediamo al mercato
+        </h2>
+
+        <div
+          class="mt-6 max-w-2xl space-y-4 text-base leading-relaxed text-ne-bianco/90 sm:text-lg"
+        >
+          <p>
+            Da ottobre a marzo mi trovi ogni sabato mattina nel centro di Forlì,
+            di fronte ai Musei San Domenico, al mercato dei produttori agricoli.
+          </p>
+
+          <p>
+            È il luogo in cui possiamo incontrarci senza uno schermo tra noi.
+          </p>
+
+          <p>
+            Puoi annusare gli oli essenziali e testare gli idrolati direttamente
+            sulla tua pelle, scoprire come vengono prodotti e scegliere ciò che
+            più ti incuriosisce.
+          </p>
+
+          <p>
+            Ci saranno anche sciroppi di fiori e aromatiche e altri prodotti
+            sfiziosi da degustare e conoscere.
+          </p>
+
+          <p class="font-semibold">Ma soprattutto potrai farmi domande.</p>
+
+          <p>
+            Perché conoscere chi c’è dietro ciò che scegliamo significa
+            conoscere la terra da cui nasce, le mani che l’hanno curata e la
+            storia che porta con sé.
+          </p>
+        </div>
+      </div>
+
+      <aside
+        class="rounded-3xl bg-ne-bianco p-6 text-ne-indaco sm:p-8 lg:sticky lg:top-8"
+      >
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.18em] text-ne-viola-spento"
+        >
+          Informazioni
+        </p>
+
+        <dl class="mt-5 space-y-4 sm:mt-6 sm:space-y-6">
+          <div>
+            <dt class="text-sm font-semibold uppercase tracking-wide">
+              Quando
+            </dt>
+            <dd class="mt-1 text-lg font-semibold sm:text-xl">Ogni sabato mattina</dd>
+          </div>
+
+          <div>
+            <dt class="text-sm font-semibold uppercase tracking-wide">Dove</dt>
+            <dd class="mt-1 text-lg font-semibold sm:text-xl">
+              Forlì, di fronte ai Musei San Domenico
+            </dd>
+          </div>
+
+          <div>
+            <dt class="text-sm font-semibold uppercase tracking-wide">
+              Periodo
+            </dt>
+            <dd class="mt-1 text-lg font-semibold sm:text-xl">Da ottobre a marzo</dd>
+          </div>
+        </dl>
+
+        <a
+          href={marketWhatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-8 inline-flex items-center justify-center rounded-full bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-viola-spento"
+        >
+          Segna il prossimo sabato
+        </a>
+      </aside>
+    </div>
+  </div>
+</section>

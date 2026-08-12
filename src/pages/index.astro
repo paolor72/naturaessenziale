@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import Market from '../components/Market.astro';
+import Plants from '../components/Plants.astro';
+import Relationship from '../components/Relationship.astro';
+import Athena from '../components/Athena.astro';
+import Manifesto from '../components/Manifesto.astro';
+import Meet from '../components/Meet.astro';
+import Whatsapp from '../components/Whatsapp.astro';
+import Experiences from '../components/Experiences.astro';
+import FinalCTA from '../components/FinalCTA.astro';
+import Footer from '../components/Footer.astro';
+
+---
+<Layout
+  title="Natura Essenziale | Piante officinali e oli essenziali a Forlì"
+  description="Coltivo e distillo lavanda, rosmarino e alloro nella mia azienda agricola. Oli essenziali, idrolati e produzioni stagionali. Incontrami al mercato di Forlì."
+>
+  <Hero
+    heading="Natura Essenziale"
+    subheading="Piante officinali, oli essenziali e prodotti che nascono dalla terra. Coltivo, raccolgo e distillo personalmente lavanda, rosmarino e alloro nella mia azienda agricola. Da ottobre a marzo puoi incontrarmi ogni sabato mattina al mercato dei produttori agricoli di Forlì di fronte ai Musei San Domenico."
+    ctaPrimaria="Vieni a trovarmi al mercato"
+    ctaSecondaria="Entra nella lista WhatsApp"
+    notaCta="Gli appuntamenti, le nuove produzioni e le Esperienze Essenziali vengono divulgati anche attraverso WhatsApp."
+  />
+  <Market />
+  <Plants />
+  <Relationship />
+  <Athena />
+  <Manifesto />
+  <Meet />
+  <Whatsapp />
+  <Experiences />
+  <FinalCTA />
+  <Footer />
+</Layout>
+

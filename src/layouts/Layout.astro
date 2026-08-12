@@ -1,0 +1,89 @@
+---
+import "@fontsource/league-spartan/400.css";
+import "@fontsource/league-spartan/600.css";
+import "@fontsource/league-spartan/700.css";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Piante officinali, oli essenziali e prodotti che nascono dalla terra.",
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>{title}</title>
+
+  <meta
+    name="description"
+    content={description}
+  />
+
+  <link
+    rel="canonical"
+    href={canonicalURL}
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <meta
+    name="theme-color"
+    content="#4E3F92"
+  />
+
+  <!-- Open Graph -->
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:locale"
+    content="it_IT"
+  />
+
+  <meta
+    property="og:site_name"
+    content="Natura Essenziale"
+  />
+
+  <meta
+    property="og:title"
+    content={title}
+  />
+
+  <meta
+    property="og:description"
+    content={description}
+  />
+
+  <meta
+    property="og:url"
+    content={canonicalURL}
+  />
+</head>
+  <body class="bg-ne-bianco text-ne-nero font-sans antialiased">
+    <slot />
+  </body>
+</html>

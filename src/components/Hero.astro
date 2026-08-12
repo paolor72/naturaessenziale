@@ -1,0 +1,72 @@
+---
+const ctaPrimaria = "Vieni a trovarmi al mercato";
+const ctaSecondaria = "Segui il canale WhatsApp";
+---
+
+<section id="hero" class="bg-ne-bianco">
+  <div class="mx-auto w-full max-w-6xl px-6 py-14 sm:py-20 lg:px-8 lg:py-28">
+    <!-- Brand Natura Essenziale -->
+    <img
+      src="images/natura-essenziale-brand.jpg"
+      alt="Natura Essenziale — progetto di agricoltura meditativa"
+      width="748"
+      height="226"
+      loading="eager"
+      decoding="async"
+      class="mb-10 h-auto w-full max-w-md"
+    />
+
+    <div
+      class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16"
+    >
+      <!-- Testo -->
+      <div class="max-w-3xl">
+        <h1
+          class="text-4xl font-bold leading-tight text-ne-indaco sm:text-5xl md:text-6xl lg:text-7xl"
+        >
+          Coltivo e distillo lavanda rosmarino e alloro
+        </h1>
+
+        <p
+          class="mt-8 max-w-2xl text-lg leading-relaxed text-ne-indaco sm:text-xl"
+        >
+          Piante officinali, oli essenziali e prodotti che nascono dalla terra e
+          dalle mie mani.
+        </p>
+
+        <p class="mt-4 max-w-2xl text-base leading-relaxed text-ne-indaco">
+          Da ottobre a marzo mi trovi ogni sabato mattina al mercato contadino
+          nel centro di Forlì. Puoi conoscere le mie produzioni, provarle e
+          scoprire il processo da cui hanno origine.
+        </p>
+
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a
+            href="#mercato"
+            class="inline-flex items-center justify-center rounded-full bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-viola-spento"
+          >
+            {ctaPrimaria}
+          </a>
+
+          <a
+            href="#whatsapp"
+            class="inline-flex items-center justify-center rounded-full bg-ne-viola-spento px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-indaco"
+          >
+            {ctaSecondaria}
+          </a>
+        </div>
+      </div>
+
+      <!-- Immagine Claudia e Athena -->
+      <div class="overflow-hidden rounded-3xl">
+        <img
+          src="images/athena-claudia-hero.png"
+          alt="Claudia con Athena nell'azienda agricola Natura Essenziale"
+          loading="eager"
+          decoding="async"
+          class="h-auto w-full"
+        />
+      </div>
+    </div>
+  </div>
+</section>

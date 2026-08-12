@@ -1,0 +1,65 @@
+---
+const whatsappChannel = "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
+
+const marketMessage =
+  "Ciao, ho visto Natura Essenziale e vorrei sapere dove posso trovarti al mercato di Forlì.";
+
+const marketWhatsapp =
+  "https://wa.me/393515770877?text=" + encodeURIComponent(marketMessage);
+---
+
+<section class="bg-ne-viola-spento text-ne-bianco">
+  <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-28">
+    <div class="max-w-4xl">
+      <p
+        class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
+      >
+        Il prossimo passo
+      </p>
+
+      <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+        Ci vediamo sabato?
+      </h2>
+
+      <div
+        class="mt-6 max-w-3xl space-y-4 text-base leading-relaxed text-ne-bianco/90 sm:mt-8 sm:space-y-5 sm:text-lg"
+      >
+        <p>
+          Natura Essenziale non è soltanto il marchio di un olio essenziale.
+        </p>
+
+        <p>
+          È un'occasione per conoscere la pianta da cui nasce, chi la coltiva e
+          il lavoro che c'è dietro.
+        </p>
+
+        <p>Se sei a Forlì, vieni a trovarmi al mercato.</p>
+
+        <p>
+          Se vuoi sapere quando ci sarò, cosa sto producendo e quali saranno i
+          prossimi appuntamenti, puoi seguire il canale WhatsApp.
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+        <a
+          href={marketWhatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full items-center justify-center rounded-full bg-ne-bianco px-6 py-3 font-semibold text-ne-indaco transition-colors hover:bg-ne-indaco hover:text-ne-bianco sm:mt-10 sm:w-auto sm:px-8"
+        >
+          Vieni al mercato
+        </a>
+
+        <a
+          href={whatsappChannel}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full items-center justify-center rounded-full bg-ne-indaco px-6 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-bianco hover:text-ne-indaco sm:mt-10 sm:w-auto sm:px-8"
+        >
+          Segui il canale WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

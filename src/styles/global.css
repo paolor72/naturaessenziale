@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colori Natura Essenziale */
+  --color-ne-bianco: #FFFFFF;
+  --color-ne-nero: #000000;
+  --color-ne-viola-spento: #8E7CB8;
+  --color-ne-indaco: #4E3F92;
+  --color-ne-viola-acceso: #8C52FF;
+
+  /* Font del brand */
+  --font-sans: "League Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--color-ne-viola-acceso);
+  outline-offset: 3px;
+}
+
+@theme {
+  --color-ne-bianco: #FFFFFF;
+  --color-ne-nero: #000000;
+  --color-ne-viola-spento: #8E7CB8;
+  --color-ne-viola-testo: #6B5A91;
+  --color-ne-indaco: #4E3F92;
+  --color-ne-viola-acceso: #8C52FF;
+
+  --font-sans: "League Spartan", sans-serif;
+}
