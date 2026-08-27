@@ -1,8 +1,22 @@
+---
+const facebookUrl =
+  "https://www.facebook.com/naturaessenziale.agrmeditativa";
+
+const instagramUrl =
+  "https://www.instagram.com/naturaessenziale_agrmeditativa";
+
+const whatsappUrl =
+  "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
+
+const youtubeUrl =
+  "https://www.youtube.com/@AgricolturaMeditativa";
+---
+
 <footer class="bg-ne-bianco text-ne-indaco">
-  <div class="mx-auto max-w-6xl px-6 py-10 lg:px-8">
-    <div
-      class="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between"
-    >
+  <div class="mx-auto max-w-6xl px-6 py-12 lg:px-8 lg:py-16">
+    <div class="grid gap-10 md:grid-cols-2 md:items-start">
+
+      <!-- Identità -->
       <div>
         <p
           class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
@@ -11,15 +25,15 @@
         </p>
 
         <p class="mt-3 max-w-md leading-relaxed text-ne-viola-spento">
-          Piante officinali, oli essenziali e prodotti che nascono dalla terra e
-          dalle mie mani
+          Piante officinali, oli essenziali e prodotti che nascono dalla terra
+          e dalle mie mani.
         </p>
 
-        <!-- Social -->
         <div class="mt-6 flex items-center gap-5">
+
           <!-- Facebook -->
           <a
-            href="https://www.facebook.com/naturaessenziale.agrmeditativa"
+            href={facebookUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Natura Essenziale su Facebook"
@@ -31,17 +45,36 @@
               aria-hidden="true"
             >
               <path
-                d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"
-              ></path>
+                d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"
+              />
             </svg>
           </a>
 
           <!-- Instagram -->
           <a
-            href="https://www.instagram.com/naturaessenziale_agrmeditativa"
+            href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Natura Essenziale su Instagram"
+            class="transition-opacity hover:opacity-60"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              class="h-6 w-6 fill-current"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"
+              />
+            </svg>
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Canale WhatsApp Natura Essenziale"
             onclick="gtag('event', 'whatsapp_canale', { source: 'footer' });"
             class="transition-opacity hover:opacity-60"
           >
@@ -51,33 +84,14 @@
               aria-hidden="true"
             >
               <path
-                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.5-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- WhatsApp -->
-          <a
-            href="https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Canale WhatsApp Natura Essenziale"
-            class="transition-opacity hover:opacity-60"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              class="h-6 w-6 fill-current"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 2a10 10 0 0 0-8.65 15.02L2 22l5.1-1.34A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.08-1.11l-.29-.17-3.03.8.81-2.95-.19-.3A8 8 0 1 1 12 20Zm4.38-5.97c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.19-1.42-1.33-1.66-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.02.4 1.37.51.58.18 1.1.16 1.51.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"
-              ></path>
+                d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.5 0 .16 5.34.16 11.92c0 2.1.55 4.15 1.6 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.72 1.46h.01C18.66 23.81 24 18.47 24 11.9c0-3.18-1.24-6.17-3.48-8.42ZM12.08 21.8h-.01a9.85 9.85 0 0 1-5.02-1.37l-.36-.21-3.74.98 1-3.64-.24-.37a9.84 9.84 0 0 1-1.52-5.27c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 0 1 2.9 7c0 5.45-4.44 9.87-9.9 9.87Zm5.42-7.4c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47a8.93 8.93 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+              />
             </svg>
           </a>
 
           <!-- YouTube -->
           <a
-            href="https://www.youtube.com/@AgricolturaMeditativa"
+            href={youtubeUrl}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Agricoltura Meditativa su YouTube"
@@ -89,25 +103,75 @@
               aria-hidden="true"
             >
               <path
-                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"
-              ></path>
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"
+              />
             </svg>
           </a>
+
         </div>
       </div>
 
-      <nav class="flex flex-col gap-2 text-sm sm:text-right">
-        <a href="/manifesto" class="font-semibold hover:underline">
-          Manifesto
-        </a>
-      </nav>
+      <!-- Navigazione / privacy -->
+      <div class="md:text-right">
+        <nav
+          class="flex flex-col items-start gap-3 text-sm md:items-end"
+          aria-label="Link footer"
+        >
+          <a
+            href="/manifesto/"
+            class="font-semibold underline-offset-4 hover:underline"
+          >
+            Manifesto
+          </a>
+
+          <a
+            href="/cookie-policy/"
+            class="font-semibold underline-offset-4 hover:underline"
+          >
+            Cookie Policy
+          </a>
+
+          <button
+            id="cookie-preferences"
+            type="button"
+            class="font-semibold underline-offset-4 hover:underline"
+          >
+            Preferenze cookie
+          </button>
+        </nav>
+      </div>
     </div>
 
+    <!-- Dati aziendali -->
     <div
-      class="mt-8 border-t border-ne-indaco/15 pt-6 text-sm text-ne-viola-spento"
+      class="mt-10 border-t border-ne-indaco/15 pt-6 text-sm leading-relaxed text-ne-viola-spento"
     >
-      <p>© 2026 Natura Essenziale</p>
-      <p class="mt-1">Romanini Claudia az. agr. · P. IVA 04694440407</p>
+      <p>
+        © 2026 Natura Essenziale
+      </p>
+
+      <p class="mt-1">
+        Romanini Claudia az. agr. · P. IVA 04694440407
+      </p>
     </div>
   </div>
 </footer>
+
+<script is:inline>
+  const cookiePreferencesButton =
+    document.getElementById("cookie-preferences");
+
+  cookiePreferencesButton?.addEventListener("click", () => {
+    localStorage.removeItem("ne_cookie_consent");
+
+    const banner = document.getElementById("cookie-banner");
+
+    if (banner) {
+      banner.classList.remove("hidden");
+      banner.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  });
+</script>
