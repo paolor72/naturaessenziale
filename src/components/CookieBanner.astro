@@ -1,0 +1,67 @@
+<div
+  id="cookie-banner"
+  class="fixed inset-x-4 bottom-4 z-50 hidden rounded-3xl border border-ne-indaco/20 bg-ne-bianco p-5 shadow-2xl sm:left-auto sm:right-6 sm:max-w-md sm:p-6"
+  role="dialog"
+  aria-live="polite"
+  aria-label="Preferenze cookie"
+>
+  <p class="text-lg font-semibold text-ne-indaco">
+    Cookie e privacy
+  </p>
+
+  <p class="mt-3 text-sm leading-relaxed text-ne-indaco">
+    Uso cookie tecnici necessari al funzionamento del sito e, solo con il tuo
+    consenso, Google Analytics per capire come viene utilizzato Natura Essenziale
+    e migliorarlo nel tempo.
+  </p>
+
+  <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+    <button
+      id="cookie-reject"
+      type="button"
+      class="inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-bianco px-5 py-3 font-semibold text-ne-indaco transition-colors hover:bg-ne-indaco hover:text-ne-bianco"
+    >
+      Rifiuta
+    </button>
+
+    <button
+      id="cookie-accept"
+      type="button"
+      class="inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-5 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-bianco hover:text-ne-indaco"
+    >
+      Accetta
+    </button>
+  </div>
+
+  <p class="mt-4 text-sm text-ne-indaco">
+    <a
+      href="/cookie-policy/"
+      class="font-semibold underline underline-offset-4"
+    >
+      Leggi l’informativa cookie
+    </a>
+  </p>
+</div>
+
+<script is:inline>
+  const banner = document.getElementById("cookie-banner");
+  const acceptButton = document.getElementById("cookie-accept");
+  const rejectButton = document.getElementById("cookie-reject");
+
+  const consent = localStorage.getItem("ne_cookie_consent");
+
+  if (!consent && banner) {
+    banner.classList.remove("hidden");
+  }
+
+  acceptButton?.addEventListener("click", () => {
+    localStorage.setItem("ne_cookie_consent", "accepted");
+    window.enableAnalytics?.();
+    banner?.classList.add("hidden");
+  });
+
+  rejectButton?.addEventListener("click", () => {
+    localStorage.setItem("ne_cookie_consent", "rejected");
+    banner?.classList.add("hidden");
+  });
+</script>
