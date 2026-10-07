@@ -1,22 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const whatsappChannel =
-  "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
+const whatsappChannel = "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
 
-const youtubeUrl =
-  "https://www.youtube.com/@AgricolturaMeditativa";
+const youtubeUrl = "https://www.youtube.com/@AgricolturaMeditativa";
 
-const instagramUrl =
-  "https://www.instagram.com/naturaessenziale_agrmeditativa";
+const instagramUrl = "https://www.instagram.com/naturaessenziale_agrmeditativa";
 
-const facebookUrl =
-  "https://www.facebook.com/naturaessenziale.agrmeditativa";
+const facebookUrl = "https://www.facebook.com/naturaessenziale.agrmeditativa";
 
 const whatsappDirect =
   "https://wa.me/393515770877?text=" +
   encodeURIComponent(
-    "Ciao, vorrei ricevere i tuoi aggiornamenti diretti su WhatsApp. Puoi spiegarmi come funzionano le liste M, A ed E?"
+    "Ciao, vorrei ricevere i tuoi aggiornamenti diretti su WhatsApp. Puoi spiegarmi come funzionano le liste M, A ed E?",
   );
 
 // Inserire qui il link al catalogo WhatsApp quando vuoi
@@ -28,44 +24,9 @@ const whatsappCatalog = "#";
   description="Tutti i modi per restare in contatto con Natura Essenziale, scoprire i prodotti e seguire il progetto."
 >
   <main>
-
-    <!-- 1. CHI SONO E COSA FACCIO -->
-    <section class="bg-ne-bianco text-ne-viola spento">
-      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-
-        <img
-          src="/images/brand-indaco-sfondo-trasparente.webp"
-          alt="Natura Essenziale — progetto di agricoltura meditativa"
-          width="748"
-          height="226"
-          class="h-auto w-full max-w-md"
-        />
-
-        <p
-          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em]"
-        >
-          Chi sono e cosa faccio
-        </p>
-
-        <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl text-ne-indaco">
-          Natura Essenziale
-        </h1>
-
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <!-- INSERISCI QUI LA TUA BREVE PRESENTAZIONE -->
-          <p>
-            Inserisci qui il tuo testo di presentazione.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- 2. SCEGLI COME RESTARE IN CONTATTO -->
+    <!-- SCEGLI COME RESTARE IN CONTATTO -->
     <section class="bg-ne-bianco text-ne-indaco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-
         <p
           class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
         >
@@ -79,12 +40,12 @@ const whatsappCatalog = "#";
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
           <!-- INSERISCI QUI IL TESTO SOCIAL-->
           <p>
-            per continuare a vedere racconti dal campo, lavorazioni, consigli d’uso e novità.
+            per continuare a vedere racconti dal campo, lavorazioni, consigli
+            d’uso e novità.
           </p>
         </div>
 
         <div class="mt-10 flex flex-wrap gap-4">
-
           <!-- WhatsAppChannel -->
           <a
             href={whatsappChannel}
@@ -124,17 +85,13 @@ const whatsappCatalog = "#";
           >
             Facebook
           </a>
-
         </div>
-
       </div>
     </section>
 
-
-    <!-- 3. SCOPRI I PRODOTTI -->
+    <!-- SCOPRI I PRODOTTI -->
     <section class="bg-ne-viola-spento text-ne-bianco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-
         <p
           class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
         >
@@ -147,9 +104,7 @@ const whatsappCatalog = "#";
 
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
           <!-- INSERISCI QUI IL TESTO PRODOTTI-->
-          <p>
-            Oli essenziali, idrolati e altre produzioni stagionali.
-          </p>
+          <p>Oli essenziali, idrolati e altre produzioni stagionali.</p>
         </div>
 
         <a
@@ -160,29 +115,27 @@ const whatsappCatalog = "#";
         >
           Prodotti
         </a>
-
       </div>
     </section>
 
-
-    <!-- 4. RICEVI AVVISI DIRETTI -->
-    <section class="bg-ne-bianco text-ne-viola-spento">
+    <!-- RICEVI AVVISI DIRETTI -->
+    <section class="bg-ne-bianco text-ne-indaco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-
-        <p
-          class="text-sm font-semibold uppercase tracking-[0.2em]"
-        >
+        <p class="text-sm font-semibold uppercase tracking-[0.2em]">
           Messaggi diretti
         </p>
 
-        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+        <h2
+          class="mt-4 text-4xl font-bold leading-tight sm:text-5xl text-ne-viola-spento"
+        >
           Ricevi avvisi diretti
         </h2>
 
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-indaco">
           <!-- INSERISCI QUI IL TESTO -->
           <p>
-            Se vuoi ricevere occasionalmente messaggi diretti da me, scrivimi su WhatsApp e scegli le liste che ti interessano.
+            Se vuoi ricevere occasionalmente messaggi diretti da me, scrivimi su
+            WhatsApp e scegli le liste che ti interessano.
           </p>
         </div>
 
@@ -194,18 +147,13 @@ const whatsappCatalog = "#";
         >
           Scrivimi su WhatsApp
         </a>
-
       </div>
     </section>
 
-
-    <!-- 5. CONOSCI MEGLIO IL PROGETTO -->
+    <!-- CONOSCI MEGLIO IL PROGETTO -->
     <section class="bg-ne-viola-spento text-ne-indaco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-
-        <p
-          class="text-sm font-semibold uppercase tracking-[0.2em]"
-        >
+        <p class="text-sm font-semibold uppercase tracking-[0.2em]">
           Natura Essenziale
         </p>
 
@@ -216,7 +164,8 @@ const whatsappCatalog = "#";
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
           <!-- Vuoi capire meglio cosa c’è dietro Natura Essenziale?-->
           <p>
-            Scopri il progetto, l’Agricoltura Meditativa e il mio modo di lavorare.
+            Scopri il progetto, l’Agricoltura Meditativa e il mio modo di
+            lavorare.
           </p>
         </div>
 
@@ -226,9 +175,7 @@ const whatsappCatalog = "#";
         >
           Scopri di più
         </a>
-
       </div>
     </section>
-
   </main>
 </Layout>
