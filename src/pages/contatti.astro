@@ -1,0 +1,234 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const whatsappChannel =
+  "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
+
+const youtubeUrl =
+  "https://www.youtube.com/@AgricolturaMeditativa";
+
+const instagramUrl =
+  "https://www.instagram.com/naturaessenziale_agrmeditativa";
+
+const facebookUrl =
+  "https://www.facebook.com/naturaessenziale.agrmeditativa";
+
+const whatsappDirect =
+  "https://wa.me/393515770877?text=" +
+  encodeURIComponent(
+    "Ciao Claudia, ho visitato il sito Natura Essenziale e vorrei contattarti."
+  );
+
+// Inserire qui il link al catalogo WhatsApp quando vuoi
+const whatsappCatalog = "#";
+---
+
+<Layout
+  title="Contatti | Natura Essenziale"
+  description="Tutti i modi per restare in contatto con Natura Essenziale, scoprire i prodotti e seguire il progetto."
+>
+  <main>
+
+    <!-- 1. CHI SONO E COSA FACCIO -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
+
+        <img
+          src="/images/brand-indaco-sfondo-trasparente.webp"
+          alt="Natura Essenziale — progetto di agricoltura meditativa"
+          width="748"
+          height="226"
+          class="h-auto w-full max-w-md"
+        />
+
+        <p
+          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
+        >
+          Chi sono e cosa faccio
+        </p>
+
+        <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Natura Essenziale
+        </h1>
+
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+          <!-- INSERISCI QUI LA TUA BREVE PRESENTAZIONE -->
+          <p>
+            Inserisci qui il tuo testo di presentazione.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 2. SCEGLI COME RESTARE IN CONTATTO -->
+    <section class="bg-ne-bianco text-ne-viola-spento">
+      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
+
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em]"
+        >
+          Restiamo in contatto
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Scegli come restare in contatto
+        </h2>
+
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+          <!-- INSERISCI QUI IL TESTO -->
+          <p>
+            Inserisci qui il breve testo introduttivo.
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+
+          <!-- WhatsApp -->
+          <a
+            href={whatsappChannel}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
+          >
+            WhatsApp
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href={youtubeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full border-2 border-ne-viola-spento bg-ne-viola-spento px-8 py-3 font-semibold text-ne-bianco transition-colors hover:text-ne-indaco active:text-ne-indaco"
+          >
+            YouTube
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-bianco px-8 py-3 font-semibold text-ne-indaco transition-colors hover:border-ne-viola-spento hover:text-ne-viola-spento active:border-ne-viola-spento active:text-ne-viola-spento"
+          >
+            Instagram
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href={facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center rounded-full border-2 border-ne-viola-spento bg-ne-bianco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:border-ne-indaco hover:text-ne-indaco active:border-ne-indaco active:text-ne-indaco"
+          >
+            Facebook
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- 3. SCOPRI I PRODOTTI -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
+
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
+        >
+          Le mie produzioni
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Scopri i prodotti
+        </h2>
+
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+          <!-- INSERISCI QUI IL TESTO -->
+          <p>
+            Inserisci qui il breve testo sui prodotti.
+          </p>
+        </div>
+
+        <a
+          href={whatsappCatalog}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-bianco bg-ne-bianco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:bg-ne-viola-spento hover:text-ne-bianco active:bg-ne-viola-spento active:text-ne-bianco"
+        >
+          Prodotti
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- 4. RICEVI AVVISI DIRETTI -->
+    <section class="bg-ne-bianco text-ne-viola-spento">
+      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
+
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em]"
+        >
+          Messaggi diretti
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Ricevi avvisi diretti
+        </h2>
+
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+          <!-- INSERISCI QUI IL TESTO -->
+          <p>
+            Inserisci qui il breve testo sugli avvisi diretti.
+          </p>
+        </div>
+
+        <a
+          href={whatsappDirect}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-bianco hover:text-ne-indaco active:bg-ne-bianco active:text-ne-indaco"
+        >
+          Scrivimi su WhatsApp
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- 5. CONOSCI MEGLIO IL PROGETTO -->
+    <section class="bg-ne-viola-spento text-ne-indaco">
+      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
+
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em]"
+        >
+          Natura Essenziale
+        </p>
+
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Conosci meglio il progetto
+        </h2>
+
+        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
+          <!-- INSERISCI QUI IL TESTO -->
+          <p>
+            Inserisci qui il breve testo sul progetto.
+          </p>
+        </div>
+
+        <a
+          href="/"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:border-ne-viola-spento hover:bg-ne-viola-spento hover:text-ne-indaco active:border-ne-viola-spento active:bg-ne-viola-spento active:text-ne-indaco"
+        >
+          Scopri di più
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+</Layout>
