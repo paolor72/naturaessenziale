@@ -16,7 +16,7 @@ const facebookUrl =
 const whatsappDirect =
   "https://wa.me/393515770877?text=" +
   encodeURIComponent(
-    "Ciao Claudia, ho visitato il sito Natura Essenziale e vorrei contattarti."
+    "Ciao, vorrei ricevere i tuoi aggiornamenti diretti su WhatsApp. Puoi spiegarmi come funzionano le liste M, A ed E?"
   );
 
 // Inserire qui il link al catalogo WhatsApp quando vuoi
@@ -30,7 +30,7 @@ const whatsappCatalog = "#";
   <main>
 
     <!-- 1. CHI SONO E COSA FACCIO -->
-    <section class="bg-ne-bianco text-ne-indaco">
+    <section class="bg-ne-bianco text-ne-viola spento">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
 
         <img
@@ -42,12 +42,12 @@ const whatsappCatalog = "#";
         />
 
         <p
-          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
+          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em]"
         >
           Chi sono e cosa faccio
         </p>
 
-        <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+        <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl text-ne-indaco">
           Natura Essenziale
         </h1>
 
@@ -63,11 +63,11 @@ const whatsappCatalog = "#";
 
 
     <!-- 2. SCEGLI COME RESTARE IN CONTATTO -->
-    <section class="bg-ne-bianco text-ne-viola-spento">
+    <section class="bg-ne-bianco text-ne-indaco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
 
         <p
-          class="text-sm font-semibold uppercase tracking-[0.2em]"
+          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
         >
           Restiamo in contatto
         </p>
@@ -77,22 +77,22 @@ const whatsappCatalog = "#";
         </h2>
 
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <!-- INSERISCI QUI IL TESTO -->
+          <!-- INSERISCI QUI IL TESTO SOCIAL-->
           <p>
-            Inserisci qui il breve testo introduttivo.
+            per continuare a vedere racconti dal campo, lavorazioni, consigli d’uso e novità.
           </p>
         </div>
 
         <div class="mt-10 flex flex-wrap gap-4">
 
-          <!-- WhatsApp -->
+          <!-- WhatsAppChannel -->
           <a
             href={whatsappChannel}
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
           >
-            WhatsApp
+            WhatsAppChannel
           </a>
 
           <!-- YouTube -->
@@ -146,9 +146,9 @@ const whatsappCatalog = "#";
         </h2>
 
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <!-- INSERISCI QUI IL TESTO -->
+          <!-- INSERISCI QUI IL TESTO PRODOTTI-->
           <p>
-            Inserisci qui il breve testo sui prodotti.
+            Oli essenziali, idrolati e altre produzioni stagionali.
           </p>
         </div>
 
@@ -182,7 +182,7 @@ const whatsappCatalog = "#";
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
           <!-- INSERISCI QUI IL TESTO -->
           <p>
-            Inserisci qui il breve testo sugli avvisi diretti.
+            Se vuoi ricevere occasionalmente messaggi diretti da me, scrivimi su WhatsApp e scegli le liste che ti interessano.
           </p>
         </div>
 
@@ -214,15 +214,15 @@ const whatsappCatalog = "#";
         </h2>
 
         <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <!-- INSERISCI QUI IL TESTO -->
+          <!-- Vuoi capire meglio cosa c’è dietro Natura Essenziale?-->
           <p>
-            Inserisci qui il breve testo sul progetto.
+            Scopri il progetto, l’Agricoltura Meditativa e il mio modo di lavorare.
           </p>
         </div>
 
         <a
           href="/"
-          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:border-ne-viola-spento hover:bg-ne-viola-spento hover:text-ne-indaco active:border-ne-viola-spento active:bg-ne-viola-spento active:text-ne-indaco"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:border-ne-indaco hover:bg-ne-viola-spento hover:text-ne-indaco active:border-ne-indaco active:bg-ne-viola-spento active:text-ne-indaco"
         >
           Scopri di più
         </a>
