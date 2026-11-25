@@ -1,49 +1,433 @@
-<!-- Quale scegliere -->
-<section class="border-b border-ne-indaco/15 bg-ne-viola-spento text-ne-bianco">
-  <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
-    <div class="max-w-4xl">
-      <p
-        class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
-      >
-        Due prodotti, due gesti
-      </p>
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+---
 
-      <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
-        Quale scegliere?
-      </h2>
+<Layout
+  title="Olio essenziale e idrolato | Natura Essenziale"
+  description="Olio essenziale e idrolato nascono dalla stessa distillazione, ma hanno concentrazione, composizione e caratteristiche diverse. Scopri come si formano e come utilizzarli."
+>
+  <main>
+    <!-- Hero -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16 lg:px-8 lg:py-24">
+        <a
+          href="../"
+          aria-label="Torna alla home di Natura Essenziale"
+          class="inline-block"
+        >
+          <img
+            src="../images/brand-indaco-sfondo-trasparente.webp"
+            alt="Natura Essenziale — progetto di agricoltura meditativa"
+            width="748"
+            height="226"
+            loading="eager"
+            decoding="async"
+            class="mb-10 h-auto w-full max-w-md"
+          />
+        </a>
 
-      <div
-        class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg"
-      >
-        <p>
-          Non si tratta di stabilire quale dei due prodotti sia migliore.
-        </p>
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
+          <!-- Colonna sinistra: testo -->
+          <div>
+            <h1 class="mt-5 text-5xl font-bold leading-none text-ne-indaco sm:text-6xl lg:text-7xl">
+              Olio essenziale e idrolato
+            </h1>
 
-        <p class="font-semibold text-ne-indaco">
-          Si tratta piuttosto di comprendere quale sia più adatto al gesto che
-          desideriamo compiere.
-        </p>
+            <p class="mt-5 text-2xl font-semibold leading-tight text-ne-viola-spento sm:text-3xl">
+              Una stessa pianta, due diverse espressioni della sua natura.
+            </p>
 
-        <p>
-          L'olio essenziale ci permette di utilizzare una miscela concentrata
-          di sostanze aromatiche, da dosare con attenzione.
-        </p>
+            <div class="mt-10 max-w-3xl space-y-5 text-lg leading-relaxed text-ne-indaco sm:text-xl">
+              <p>
+                Quando distillo una pianta officinale, raccolgo due prodotti:
+                l'olio essenziale e l'idrolato.
+              </p>
 
-        <p>
-          L'idrolato ci permette un incontro generalmente più delicato e
-          quotidiano con le sostanze aromatiche della pianta.
-        </p>
+              <p>
+                Una delle domande che più spesso mi vengono rivolte è proprio
+                questa: che differenza c'è tra i due?
+              </p>
 
-        <div class="mt-10 border-l-4 border-ne-indaco pl-6">
-          <p class="text-2xl font-semibold leading-relaxed text-ne-bianco">
-            Due prodotti che nascono insieme.
+              <p class="font-semibold">
+                Per comprenderla, occorre partire da ciò che accade durante la
+                distillazione.
+              </p>
+            </div>
+          </div>
 
-            <span class="mt-2 block text-ne-indaco">
-              Due modi diversi di incontrare la stessa pianta.
-            </span>
-          </p>
+          <!-- Colonna destra: immagine -->
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="../images/distillazione-olio-acqua.webp"
+              alt="Distillazione di piante officinali con separazione tra olio essenziale e idrolato"
+              loading="eager"
+              decoding="async"
+              class="h-auto w-full"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <!-- Nascono insieme -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+          <!-- Colonna sinistra -->
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+              La distillazione è l'origine
+            </p>
+
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              Nascono insieme, ma sono diversi
+            </h2>
+          </div>
+
+          <!-- Colonna destra -->
+          <div class="space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
+            <p>
+              Durante la distillazione, il vapore acqueo attraversa la materia
+              vegetale, raccogliendo molte delle sostanze aromatiche contenute
+              nella pianta.
+            </p>
+
+            <p>Il vapore viene poi raffreddato e torna allo stato liquido.</p>
+
+            <p>
+              A questo punto avviene qualcosa di interessante: le sostanze
+              raccolte si distribuiscono in due liquidi distinti.
+            </p>
+
+            <p>
+              Una parte si separa dall'acqua, dando origine all'olio essenziale.
+              Un'altra rimane disciolta nell'acqua, dando origine all'idrolato.
+            </p>
+
+            <p>
+              Questa separazione dipende dalla natura chimica delle singole
+              sostanze e dalla loro diversa affinità con l'acqua.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Olio essenziale -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <!-- Colonna sinistra: immagine -->
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="../images/olio-essenziale.webp"
+              alt="Olio essenziale Natura Essenziale"
+              loading="lazy"
+              decoding="async"
+              class="h-auto w-full"
+            />
+          </div>
+
+          <!-- Colonna destra: testo -->
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              La parte più sottile
+            </p>
+
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              L'olio essenziale
+            </h2>
+
+            <p class="mt-4 text-2xl font-semibold text-ne-viola-spento">
+              Il concentrato
+            </p>
+
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <p>
+                L'olio essenziale è una miscela naturale di numerose molecole
+                aromatiche, prevalentemente poco solubili in acqua.
+              </p>
+
+              <p>
+                Nonostante il nome, è molto diverso dagli oli vegetali che
+                utilizziamo abitualmente, come l'olio di oliva o di mandorle.
+              </p>
+
+              <p>
+                Non è costituito principalmente da grassi, ma da sostanze
+                volatili, cioè capaci di disperdersi nell'aria. È proprio questa
+                caratteristica che ci permette di percepirne il profumo.
+              </p>
+
+              <p>
+                Una sola goccia racchiude una quantità considerevole di sostanze
+                aromatiche.
+              </p>
+
+              <p class="font-semibold text-ne-indaco">
+                La sua elevata concentrazione lo rende un prodotto interessante,
+                ma richiede anche attenzione, conoscenza e misura nel suo
+                utilizzo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Idrolato -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <!-- Colonna sinistra: immagine -->
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="../images/idrolato.webp"
+              alt="Idrolato Natura Essenziale"
+              loading="lazy"
+              decoding="async"
+              class="h-auto w-full"
+            />
+          </div>
+
+          <!-- Colonna destra: testo -->
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+              La parte più densa
+            </p>
+
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              L'idrolato
+            </h2>
+
+            <p class="mt-4 text-2xl font-semibold text-ne-indaco">
+              L'incontro con l'acqua
+            </p>
+
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
+              <p>
+                L'idrolato, chiamato anche acqua aromatica, è costituito
+                principalmente dall'acqua della distillazione, nella quale
+                rimangono disciolte alcune delle sostanze aromatiche della
+                pianta.
+              </p>
+
+              <p class="font-semibold text-ne-indaco">
+                Ma attenzione: l'idrolato non è semplicemente un olio essenziale
+                diluito in acqua.
+              </p>
+
+              <p>
+                Le molecole aromatiche non hanno tutte la stessa affinità con
+                l'acqua. Alcune vi si sciolgono più facilmente, altre molto
+                meno.
+              </p>
+
+              <p>
+                Per questo motivo, nell'idrolato ritroviamo molte delle sostanze
+                presenti anche nell'olio essenziale, ma in proporzioni
+                differenti.
+              </p>
+
+              <p>
+                La differenza, quindi, non riguarda soltanto la concentrazione,
+                ma anche la composizione chimica.
+              </p>
+
+              <p>
+                Questo spiega perché un olio essenziale e un idrolato ottenuti
+                dalla stessa pianta possano avere profumi, caratteristiche e
+                possibilità di utilizzo differenti.
+              </p>
+
+              <p class="text-xl font-semibold text-ne-indaco sm:text-2xl">
+                L'idrolato ha una propria identità.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Come utilizzare -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-8 lg:grid-cols-2 lg:gap-10">
+          <!-- Olio essenziale -->
+          <article class="rounded-3xl border border-ne-viola-spento/30 p-6 sm:p-10">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              In piccole quantità
+            </p>
+
+            <h2 class="mt-5 text-3xl font-bold sm:text-4xl">
+              Come utilizzare l'olio essenziale
+            </h2>
+
+            <p class="mt-6 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              L'olio essenziale è un prodotto da utilizzare in piccole quantità.
+            </p>
+
+            <p class="mt-6 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              A seconda della pianta da cui proviene e della destinazione d'uso,
+              può essere utilizzato:
+            </p>
+
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <li>Per profumare gli ambienti attraverso appositi diffusori.</li>
+
+              <li>
+                In preparazioni a base di oli vegetali destinate al massaggio.
+              </li>
+
+              <li>Come ingrediente nella preparazione di unguenti.</li>
+
+              <li>Per creare miscele aromatiche.</li>
+            </ul>
+
+            <h3 class="mt-8 text-xl font-semibold text-ne-indaco">
+              Alcune attenzioni
+            </h3>
+
+            <ul class="mt-5 list-disc space-y-3 pl-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <li>
+                Evitare l'applicazione pura sulla pelle, preferendo un'adeguata
+                diluizione.
+              </li>
+
+              <li>
+                Ricordare che l'acqua non è sufficiente a diluire un olio
+                essenziale, perché le due sostanze non si mescolano in modo
+                omogeneo.
+              </li>
+
+              <li>Evitare il contatto con occhi e mucose.</li>
+
+              <li>Non ingerirlo di propria iniziativa.</li>
+
+              <li>
+                Utilizzarlo con particolare cautela in presenza di bambini,
+                durante la gravidanza e l'allattamento o in presenza di
+                particolari condizioni di salute.
+              </li>
+
+              <li>
+                Arieggiare gli ambienti quando viene utilizzato in diffusione.
+              </li>
+            </ul>
+
+            <p class="mt-6 text-base font-semibold leading-relaxed text-ne-indaco sm:text-lg">
+              Non tutti gli oli essenziali possono essere utilizzati nello
+              stesso modo. Ogni pianta ha una propria composizione chimica e
+              richiede attenzioni specifiche.
+            </p>
+          </article>
+
+          <!-- Idrolato -->
+          <article class="rounded-3xl bg-ne-indaco/5 p-6 sm:p-10">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              Più vicino alla quotidianità
+            </p>
+
+            <h2 class="mt-5 text-3xl font-bold sm:text-4xl">
+              Come utilizzare l'idrolato
+            </h2>
+
+            <p class="mt-6 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              La natura acquosa dell'idrolato e la minore concentrazione delle
+              sostanze aromatiche lo rendono generalmente più delicato e adatto
+              a gesti quotidiani.
+            </p>
+
+            <p class="mt-6 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              Se destinato a questi utilizzi, può essere impiegato:
+            </p>
+
+            <ul class="mt-6 list-disc space-y-3 pl-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <li>Come acqua aromatica per il viso e il corpo.</li>
+
+              <li>Per rinfrescare la pelle durante la giornata.</li>
+
+              <li>Per nebulizzare sui capelli.</li>
+
+              <li>Per profumare delicatamente tessuti e ambienti.</li>
+
+              <li>
+                Come componente acquosa di preparazioni cosmetiche
+                opportunamente formulate.
+              </li>
+            </ul>
+
+            <p class="mt-6 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              Per molti di questi utilizzi non necessita di essere ulteriormente
+              diluito.
+            </p>
+
+            <p class="mt-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              Anche l'idrolato, tuttavia, contiene sostanze che possono
+              provocare sensibilità individuali. È quindi importante rispettare
+              le indicazioni d'uso del singolo prodotto.
+            </p>
+
+            <h3 class="mt-8 text-xl font-semibold text-ne-indaco">
+              Attenzione alla conservazione
+            </h3>
+
+            <p class="mt-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              La presenza di acqua rende infatti l'idrolato più esposto allo
+              sviluppo di microrganismi. È importante conservarlo secondo le
+              indicazioni riportate in etichetta, proteggerlo dal calore e dalla
+              luce, evitare contaminazioni e rispettare i tempi di utilizzo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quale scegliere -->
+    <section class="border-b border-ne-indaco/15 bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+            Due prodotti, due gesti
+          </p>
+
+          <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+            Quale scegliere?
+          </h2>
+
+          <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
+            <p>
+              Non si tratta di stabilire quale dei due prodotti sia migliore.
+            </p>
+
+            <p class="font-semibold text-ne-indaco">
+              Si tratta piuttosto di comprendere quale sia più adatto al gesto
+              che desideriamo compiere.
+            </p>
+
+            <p>
+              L'olio essenziale ci permette di utilizzare una miscela
+              concentrata di sostanze aromatiche, da dosare con attenzione.
+            </p>
+
+            <p>
+              L'idrolato ci permette un incontro generalmente più delicato e
+              quotidiano con le sostanze aromatiche della pianta.
+            </p>
+
+            <div class="mt-10 border-l-4 border-ne-indaco pl-6">
+              <p class="text-2xl font-semibold leading-relaxed text-ne-indaco">
+                Due prodotti che nascono insieme.
+                <span class="mt-2 block text-ne-indaco">
+                  Due modi diversi di incontrare la stessa pianta.
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
