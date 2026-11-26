@@ -93,7 +93,7 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
                 aria-label="Ortichette mosse dal vento nel loro ambiente naturale"
               >
                 <source
-                  src="/videos/superfood-ortiche-vento.mp4"
+                  src="../videos/superfood-ortiche-vento.mp4"
                   type="video/mp4"
                 />
                 Il tuo browser non supporta la riproduzione video.
@@ -155,55 +155,59 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
     <!-- SECTION 3 – L'essiccazione -->
     <section class="bg-ne-bianco text-ne-indaco">
       <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
-        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
-          <!-- Segnaposto: sostituire con ../images/superfood-essiccazione.webp -->
-          <div
-            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-indaco/5 p-8 text-center text-ne-viola-spento"
-            role="img"
-            aria-label="Spazio riservato alla futura immagine del processo di essiccazione"
-          >
-            <p class="max-w-xs text-sm font-semibold leading-relaxed">
-              Immagine futura
-              <br />
-              superfood-essiccazione.webp
-            </p>
-          </div>
-
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
+          <!-- Testo -->
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
               Una trasformazione antica
             </p>
+
             <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
               L'essiccazione: togliere acqua, custodire ricchezza
             </h2>
+
             <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
               <p>
-                Attraverso l'essiccazione viene sottratta gran parte dell'acqua
-                naturalmente presente nelle erbe e nei frutti, rallentandone il
-                deterioramento e rendendone possibile una conservazione più
-                lunga.
+                Essiccare significa accompagnare le erbe e i frutti verso una
+                nuova forma, permettendo loro di andare oltre il tempo della
+                raccolta.
               </p>
+
               <p>
-                La riduzione dell'acqua modifica la consistenza e il sapore
-                degli alimenti e concentra, a parità di peso, molte delle
-                sostanze naturalmente presenti nel prodotto fresco: fibre, sali
-                minerali, zuccheri e diversi composti vegetali.
+                Man mano che l'acqua evapora, i sapori si concentrano, le
+                consistenze cambiano e molte delle sostanze preziose contenute
+                nelle piante e nei frutti si ritrovano racchiuse in un volume
+                più piccolo.
               </p>
+
               <p>
-                Non tutte le sostanze si conservano allo stesso modo. Alcune
-                vitamine, ad esempio, sono particolarmente sensibili al calore e
-                all'ossidazione.
+                Ogni pianta, ogni frutto, richiedono attenzioni diverse, tempi e
+                temperature che rispettino le loro caratteristiche.
               </p>
+
               <p>
-                Per questo è importante rispettare le caratteristiche di ogni
-                pianta e di ogni frutto anche durante la loro trasformazione.
+                Le foglie di ortica, essiccate e tritate, diventano una sottile
+                farina verde, i frutti acquistano una nuova consistenza e una
+                dolcezza più intensa.
               </p>
+
               <p>
-                Il risultato è un alimento diverso da quello di partenza, con
-                una propria consistenza, un proprio sapore e nuove possibilità
-                di utilizzo.
+                L'essiccazione non è soltanto un modo per conservare un
+                alimento, ma anche per scoprirlo nuovamente, attraverso altri
+                sapori, altre consistenze e nuove possibilità di utilizzo.
               </p>
             </div>
+          </div>
+
+          <!-- Immagine -->
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="../images/superfood-ortiche-essiccatore.webp"
+              alt="Ortiche disposte nell'essiccatore durante il processo di essiccazione"
+              loading="lazy"
+              decoding="async"
+              class="h-auto w-full"
+            />
           </div>
         </div>
       </div>
@@ -236,8 +240,7 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
             <h3 class="mt-2 text-2xl font-bold">L'ortica</h3>
             <p class="mt-4 leading-relaxed text-ne-bianco/90">
               Una pianta spontanea che spesso cerchiamo di evitare, ma che
-              merita di essere riscoperta anche come ingrediente della nostra
-              cucina.
+              merita di essere riscoperta anche in cucina.
             </p>
           </article>
 
@@ -255,7 +258,7 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
             <h3 class="mt-2 text-2xl font-bold">Le more di gelso</h3>
             <p class="mt-4 leading-relaxed text-ne-bianco/90">
               Piccoli frutti dal sapore dolce e intenso, un tempo familiari
-              nelle nostre campagne, oggi meno presenti sulle nostre tavole.
+              nelle nostre campagne, oggi quasi dimenticati.
             </p>
           </article>
 
@@ -273,7 +276,7 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
             <h3 class="mt-2 text-2xl font-bold">I fichi</h3>
             <p class="mt-4 leading-relaxed text-ne-bianco/90">
               Un frutto che, attraverso l'essiccazione, rinnova un'antica
-              tradizione alimentare mediterranea.
+              tradizione mediterranea.
             </p>
           </article>
 
@@ -290,17 +293,14 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
             </p>
             <h3 class="mt-2 text-2xl font-bold">I cachi</h3>
             <p class="mt-4 leading-relaxed text-ne-bianco/90">
-              La dolcezza e il colore di un frutto che accompagna il passaggio
-              verso la stagione fredda.
+              La dolcezza e il colore che accompagnano il passaggio verso la stagione fredda.
             </p>
           </article>
         </div>
 
         <div class="mt-14 border-l-4 border-ne-indaco pl-6">
           <p class="max-w-4xl text-2xl font-semibold leading-relaxed">
-            Quattro prodotti molto diversi tra loro, accomunati dalla semplicità
-            della loro trasformazione e dal ritmo naturale della loro
-            produzione.
+            Ogni stagione porta con sé qualcosa di buono da raccogliere e custodire. Quattro doni diversi, ciascuno con il suo sapore, il suo tempo e la sua storia.
           </p>
         </div>
       </div>
