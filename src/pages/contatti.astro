@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
 
-const whatsappChannel = "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
+const whatsappChannel =
+  "https://whatsapp.com/channel/0029VbBN4pDJ93wcHURwJd1f";
 
-const youtubeUrl = "https://www.youtube.com/@AgricolturaMeditativa";
+const youtubeUrl =
+  "https://www.youtube.com/@AgricolturaMeditativa";
 
-const instagramUrl = "https://www.instagram.com/naturaessenziale_agrmeditativa";
+const instagramUrl =
+  "https://www.instagram.com/naturaessenziale_agrmeditativa";
 
-const facebookUrl = "https://www.facebook.com/naturaessenziale.agrmeditativa";
+const facebookUrl =
+  "https://www.facebook.com/naturaessenziale.agrmeditativa";
 
 const whatsappDirect =
   "https://wa.me/393515770877?text=" +
@@ -15,8 +20,8 @@ const whatsappDirect =
     "Ciao, vorrei ricevere i tuoi aggiornamenti diretti su WhatsApp. Puoi spiegarmi come funzionano le liste M, A ed E?",
   );
 
-// Inserire qui il link al catalogo WhatsApp quando vuoi
-const whatsappCatalog = "https://wa.me/c/393515770877";
+const whatsappCatalog =
+  "https://wa.me/c/393515770877";
 ---
 
 <Layout
@@ -24,144 +29,151 @@ const whatsappCatalog = "https://wa.me/c/393515770877";
   description="Tutti i modi per restare in contatto con Natura Essenziale, scoprire i prodotti e seguire il progetto."
 >
   <main>
-    <!-- LOGO -->
-    <section class="bg-ne-bianco">
-      <div class="mx-auto max-w-5xl px-6 pt-12 lg:px-8 lg:pt-16">
-        <img
-          src="/images/brand-indaco-sfondo-trasparente.webp"
-          alt="Natura Essenziale — progetto di agricoltura meditativa"
-          width="748"
-          height="226"
-          loading="eager"
-          decoding="async"
-          class="h-auto w-full max-w-md"
-        />
+    <!-- SOCIAL -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-5xl px-6 py-12 lg:px-8 lg:py-24">
+        <!-- Logo -->
+        <a
+          href="../"
+          aria-label="Torna alla home di Natura Essenziale"
+          class="inline-block"
+        >
+          <img
+            src="../images/brand-indaco-sfondo-trasparente.webp"
+            alt="Natura Essenziale — progetto di agricoltura meditativa"
+            width="748"
+            height="226"
+            loading="eager"
+            decoding="async"
+            class="h-auto w-full max-w-md"
+          />
+        </a>
+
+        <div class="mt-14">
+          <p
+            class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
+          >
+            Restiamo in contatto
+          </p>
+
+          <h1 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+            Seguimi sui social
+          </h1>
+
+          <div
+            class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-viola-spento"
+          >
+            <p>
+              Per continuare a vedere racconti dal campo, lavorazioni,
+              consigli d’uso e novità.
+            </p>
+          </div>
+
+          <div class="mt-10 flex items-center gap-6">
+            <!-- WhatsApp -->
+            <a
+              href={whatsappChannel}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Canale WhatsApp Natura Essenziale"
+              title="WhatsApp"
+              class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="h-9 w-9 fill-current"
+              >
+                <path
+                  d="M20.52 3.48A11.81 11.81 0 0 0 12.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.14 1.6 5.94L.1 24l6.35-1.66a11.86 11.86 0 0 0 5.63 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.15-3.45-8.41ZM12.09 21.76h-.01a9.84 9.84 0 0 1-5.02-1.38l-.36-.21-3.77.99 1.01-3.67-.24-.38a9.83 9.83 0 1 1 8.39 4.65Zm5.4-7.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.48-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+                />
+              </svg>
+            </a>
+
+            <!-- YouTube -->
+            <a
+              href={youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube Natura Essenziale"
+              title="YouTube"
+              class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="h-9 w-9 fill-current"
+              >
+                <path
+                  d="M23.5 6.2a3.01 3.01 0 0 0-2.12-2.13C19.51 3.56 12 3.56 12 3.56s-7.51 0-9.38.51A3.01 3.01 0 0 0 .5 6.2 31.26 31.26 0 0 0 0 12a31.26 31.26 0 0 0 .5 5.8 3.01 3.01 0 0 0 2.12 2.13c1.87.51 9.38.51 9.38.51s7.51 0 9.38-.51a3.01 3.01 0 0 0 2.12-2.13A31.26 31.26 0 0 0 24 12a31.26 31.26 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.24 3.6L9.6 15.6Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Natura Essenziale"
+              title="Instagram"
+              class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="h-9 w-9 fill-current"
+              >
+                <path
+                  d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM17 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+                />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a
+              href={facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Natura Essenziale"
+              title="Facebook"
+              class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                class="h-9 w-9 fill-current"
+              >
+                <path
+                  d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- SCEGLI COME RESTARE IN CONTATTO -->
-    <section class="bg-ne-bianco text-ne-indaco">
+    <!-- LISTE -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
         <p
-          class="mt-12 text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
+          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
         >
-          Restiamo in contatto
-        </p>
-
-        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          Scegli come restare in contatto
-        </h2>
-
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <p>
-            Per continuare a vedere racconti dal campo, lavorazioni, consigli
-            d’uso e novità.
-          </p>
-        </div>
-
-        <div class="mt-10 flex items-center gap-6">
-          <!-- WhatsApp -->
-          <a
-            href={whatsappChannel}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Canale WhatsApp Natura Essenziale"
-            title="WhatsApp"
-            class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              class="h-9 w-9 fill-current"
-            >
-              <path
-                d="M20.52 3.48A11.81 11.81 0 0 0 12.08 0C5.53 0 .2 5.33.2 11.88c0 2.09.55 4.14 1.6 5.94L.1 24l6.35-1.66a11.86 11.86 0 0 0 5.63 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.23-6.15-3.45-8.41ZM12.09 21.76h-.01a9.84 9.84 0 0 1-5.02-1.38l-.36-.21-3.77.99 1.01-3.67-.24-.38a9.83 9.83 0 1 1 8.39 4.65Zm5.4-7.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.48-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.75-.72 2-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- YouTube -->
-          <a
-            href={youtubeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube Natura Essenziale"
-            title="YouTube"
-            class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              class="h-9 w-9 fill-current"
-            >
-              <path
-                d="M23.5 6.2a3.01 3.01 0 0 0-2.12-2.13C19.51 3.56 12 3.56 12 3.56s-7.51 0-9.38.51A3.01 3.01 0 0 0 .5 6.2 31.26 31.26 0 0 0 0 12a31.26 31.26 0 0 0 .5 5.8 3.01 3.01 0 0 0 2.12 2.13c1.87.51 9.38.51 9.38.51s7.51 0 9.38-.51a3.01 3.01 0 0 0 2.12-2.13A31.26 31.26 0 0 0 24 12a31.26 31.26 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.24 3.6L9.6 15.6Z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- Instagram -->
-          <a
-            href={instagramUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram Natura Essenziale"
-            title="Instagram"
-            class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              class="h-9 w-9 fill-current"
-            >
-              <path
-                d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM17 5.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- Facebook -->
-          <a
-            href={facebookUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook Natura Essenziale"
-            title="Facebook"
-            class="text-ne-indaco transition-colors hover:text-ne-viola-spento active:text-ne-viola-spento"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-              class="h-9 w-9 fill-current"
-            >
-              <path
-                d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.03 4.39 11.03 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.7 4.53-4.7 1.31 0 2.69.24 2.69.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"
-              ></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- RICEVI AVVISI DIRETTI -->
-    <section class="bg-ne-viola-spento text-ne-indaco">
-      <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em]">
           Messaggi diretti
         </p>
 
-        <h2
-          class="mt-4 text-4xl font-bold leading-tight sm:text-5xl text-ne-bianco"
-        >
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
           Richiedi avvisi diretti su mercati, prodotti ed eventi
         </h2>
 
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-bianco">
-          <!-- INSERISCI QUI IL TESTO -->
+        <div
+          class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-bianco/90"
+        >
           <p>
             Se vuoi ricevere occasionalmente messaggi diretti, scrivimi su
             WhatsApp per iscriverti alle liste che ti interessano.
@@ -172,18 +184,18 @@ const whatsappCatalog = "https://wa.me/c/393515770877";
           href={whatsappDirect}
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:bg-ne-viola-spento hover:text-ne-indaco active:bg-ne-viola-spento active:text-ne-indaco"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-bianco bg-ne-bianco px-8 py-3 font-semibold text-ne-indaco transition-colors hover:bg-ne-viola-spento hover:text-ne-bianco active:bg-ne-viola-spento active:text-ne-bianco"
         >
           Iscriviti alle liste Wh
         </a>
       </div>
     </section>
 
-    <!-- SCOPRI I PRODOTTI -->
-    <section class="bg-ne-viola-bianco text-ne-viola-spento">
+    <!-- PRODOTTI -->
+    <section class="bg-ne-bianco text-ne-indaco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
         <p
-          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
+          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento"
         >
           Le mie produzioni
         </p>
@@ -192,9 +204,12 @@ const whatsappCatalog = "https://wa.me/c/393515770877";
           Scopri i prodotti
         </h2>
 
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed">
-          <!-- INSERISCI QUI IL TESTO PRODOTTI-->
-          <p>Oli essenziali, idrolati e altre produzioni stagionali.</p>
+        <div
+          class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-viola-spento"
+        >
+          <p>
+            Oli essenziali, idrolati e altre produzioni stagionali.
+          </p>
         </div>
 
         <a
@@ -208,20 +223,22 @@ const whatsappCatalog = "https://wa.me/c/393515770877";
       </div>
     </section>
 
-    <!-- CONOSCI MEGLIO IL PROGETTO -->
+    <!-- PROGETTO -->
     <section class="bg-ne-viola-spento text-ne-bianco">
       <div class="mx-auto max-w-5xl px-6 py-14 lg:px-8 lg:py-24">
-        <p class="text-sm font-semibold uppercase tracking-[0.2em]">
+        <p
+          class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco"
+        >
           Natura Essenziale
         </p>
 
-        <h2
-          class="mt-4 text-4xl font-bold leading-tight sm:text-5xl text-ne-indaco"
-        >
+        <h2 class="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
           Conosci meglio il progetto
         </h2>
-        <div class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-indaco">
-          <!-- Vuoi capire meglio cosa c’è dietro Natura Essenziale?-->
+
+        <div
+          class="mt-7 max-w-3xl text-lg leading-relaxed text-ne-bianco/90"
+        >
           <p>
             Scopri il progetto, l’Agricoltura Meditativa e il mio modo di
             lavorare.
@@ -229,12 +246,14 @@ const whatsappCatalog = "https://wa.me/c/393515770877";
         </div>
 
         <a
-          href="/"
-          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-bianco bg-ne-bianco px-8 py-3 font-semibold text-ne-viola-spento transition-colors hover:border-ne-bianco hover:bg-ne-viola-spento hover:text-ne-bianco active:border-ne-bianco active:bg-ne-viola-spento active:text-ne-bianco"
+          href="../"
+          class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-bianco bg-ne-bianco px-8 py-3 font-semibold text-ne-indaco transition-colors hover:bg-ne-viola-spento hover:text-ne-bianco active:bg-ne-viola-spento active:text-ne-bianco"
         >
           Scopri di più
         </a>
       </div>
     </section>
   </main>
+
+  <Footer />
 </Layout>

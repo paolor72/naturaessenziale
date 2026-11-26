@@ -1,0 +1,428 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+
+const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
+---
+
+<Layout
+  title="Superfood – Erbe e frutti essiccati | Natura Essenziale"
+  description="Ortica, more di gelso, fichi e cachi essiccati. Scopri le piccole produzioni stagionali di Natura Essenziale e il valore di custodire l'abbondanza del raccolto."
+>
+  <main>
+    <!-- SECTION 1 – Hero -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16 lg:px-8 lg:py-24">
+        <a
+          href="../"
+          aria-label="Torna alla home di Natura Essenziale"
+          class="inline-block"
+        >
+          <img
+            src="../images/brand-indaco-sfondo-trasparente.webp"
+            alt="Natura Essenziale — progetto di agricoltura meditativa"
+            width="748"
+            height="226"
+            loading="eager"
+            decoding="async"
+            class="mb-10 h-auto w-full max-w-md"
+          />
+        </a>
+
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
+          <div>
+            <h1 class="mt-5 text-5xl font-bold leading-none text-ne-indaco sm:text-6xl lg:text-7xl">
+              Superfood
+            </h1>
+
+            <p class="mt-5 text-2xl font-semibold leading-tight text-ne-viola-spento sm:text-3xl">
+              Il nutrimento che segue le stagioni
+            </p>
+
+            <div class="mt-10 max-w-3xl space-y-5 text-lg leading-relaxed text-ne-indaco sm:text-xl">
+              <p>Non occorre andare lontano per trovare alimenti preziosi.</p>
+
+              <p>
+                Alcuni crescono spontaneamente ai nostri piedi, altri maturano
+                sugli alberi dei nostri giardini. Sono piante e frutti che
+                appartengono al nostro territorio, alla nostra cultura e, in
+                molti casi, alla memoria delle nostre famiglie.
+              </p>
+
+              <p>
+                Li ho riuniti sotto il nome di <em>superfood</em>, un termine
+                moderno per raccontare qualcosa che moderno non è: la ricchezza
+                degli alimenti che la natura ci mette a disposizione nel corso
+                delle stagioni e che possiamo imparare a conoscere, conservare e
+                utilizzare nella nostra quotidianità.
+              </p>
+            </div>
+          </div>
+
+          <!-- Immagine superfood -->
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="../images/superfood-hero.webp"
+              alt="Superfood: erbe e frutti essiccati"
+              loading="eager"
+              decoding="async"
+              class="h-auto w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 – Custodire l'abbondanza -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <!-- Segnaposto: sostituire con ../images/superfood-raccolto.webp -->
+          <div
+            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-bianco/15 p-8 text-center text-ne-bianco"
+            role="img"
+            aria-label="Spazio riservato alla futura immagine del raccolto del frutteto-giardino"
+          >
+            <p class="max-w-xs text-sm font-semibold leading-relaxed">
+              Immagine futura
+              <br />
+              superfood-raccolto.webp
+            </p>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+              Assecondare le stagioni
+            </p>
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              Custodire l'abbondanza
+            </h2>
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
+              <p>
+                Nel mio frutteto-giardino ogni stagione ha qualcosa da offrire,
+                ma non sempre nelle stesse quantità.
+              </p>
+              <p>
+                Ci sono momenti in cui la natura è particolarmente generosa, in
+                cui i frutti maturano tutti insieme o le erbe spontanee crescono
+                rigogliose.
+              </p>
+              <p>
+                L'essiccazione nasce per me dal desiderio di custodire questa
+                abbondanza, di non sprecarla e di poterne godere anche quando il
+                tempo della raccolta è ormai trascorso.
+              </p>
+              <p>
+                È una delle più antiche tecniche di conservazione degli
+                alimenti, un modo semplice per accompagnare il prodotto fresco
+                verso una nuova forma, senza perdere il legame con la sua
+                stagione di origine.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 – L'essiccazione -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <!-- Segnaposto: sostituire con ../images/superfood-essiccazione.webp -->
+          <div
+            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-indaco/5 p-8 text-center text-ne-viola-spento"
+            role="img"
+            aria-label="Spazio riservato alla futura immagine del processo di essiccazione"
+          >
+            <p class="max-w-xs text-sm font-semibold leading-relaxed">
+              Immagine futura
+              <br />
+              superfood-essiccazione.webp
+            </p>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              Una trasformazione antica
+            </p>
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              L'essiccazione: togliere acqua, custodire ricchezza
+            </h2>
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <p>
+                Attraverso l'essiccazione viene sottratta gran parte dell'acqua
+                naturalmente presente nelle erbe e nei frutti, rallentandone il
+                deterioramento e rendendone possibile una conservazione più
+                lunga.
+              </p>
+              <p>
+                La riduzione dell'acqua modifica la consistenza e il sapore
+                degli alimenti e concentra, a parità di peso, molte delle
+                sostanze naturalmente presenti nel prodotto fresco: fibre, sali
+                minerali, zuccheri e diversi composti vegetali.
+              </p>
+              <p>
+                Non tutte le sostanze si conservano allo stesso modo. Alcune
+                vitamine, ad esempio, sono particolarmente sensibili al calore e
+                all'ossidazione.
+              </p>
+              <p>
+                Per questo è importante rispettare le caratteristiche di ogni
+                pianta e di ogni frutto anche durante la loro trasformazione.
+              </p>
+              <p>
+                Il risultato è un alimento diverso da quello di partenza, con
+                una propria consistenza, un proprio sapore e nuove possibilità
+                di utilizzo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 – Quattro stagioni, quattro doni -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+            Il ritmo della natura
+          </p>
+          <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+            Quattro stagioni, quattro doni
+          </h2>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="border-t border-ne-bianco/30 pt-6">
+            <div
+              class="flex aspect-square items-center justify-center rounded-2xl bg-ne-bianco/15 p-5 text-center"
+              role="img"
+              aria-label="Spazio riservato alla futura fotografia dell'ortica"
+            >
+              <p class="text-sm font-semibold">superfood-ortica.webp</p>
+            </div>
+            <p class="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ne-indaco">
+              Primavera
+            </p>
+            <h3 class="mt-2 text-2xl font-bold">L'ortica</h3>
+            <p class="mt-4 leading-relaxed text-ne-bianco/90">
+              Una pianta spontanea che spesso cerchiamo di evitare, ma che
+              merita di essere riscoperta anche come ingrediente della nostra
+              cucina.
+            </p>
+          </article>
+
+          <article class="border-t border-ne-bianco/30 pt-6">
+            <div
+              class="flex aspect-square items-center justify-center rounded-2xl bg-ne-bianco/15 p-5 text-center"
+              role="img"
+              aria-label="Spazio riservato alla futura fotografia delle more di gelso"
+            >
+              <p class="text-sm font-semibold">superfood-gelso.webp</p>
+            </div>
+            <p class="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ne-indaco">
+              Estate
+            </p>
+            <h3 class="mt-2 text-2xl font-bold">Le more di gelso</h3>
+            <p class="mt-4 leading-relaxed text-ne-bianco/90">
+              Piccoli frutti dal sapore dolce e intenso, un tempo familiari
+              nelle nostre campagne, oggi meno presenti sulle nostre tavole.
+            </p>
+          </article>
+
+          <article class="border-t border-ne-bianco/30 pt-6">
+            <div
+              class="flex aspect-square items-center justify-center rounded-2xl bg-ne-bianco/15 p-5 text-center"
+              role="img"
+              aria-label="Spazio riservato alla futura fotografia dei fichi"
+            >
+              <p class="text-sm font-semibold">superfood-fichi.webp</p>
+            </div>
+            <p class="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ne-indaco">
+              Autunno
+            </p>
+            <h3 class="mt-2 text-2xl font-bold">I fichi</h3>
+            <p class="mt-4 leading-relaxed text-ne-bianco/90">
+              Un frutto che, attraverso l'essiccazione, rinnova un'antica
+              tradizione alimentare mediterranea.
+            </p>
+          </article>
+
+          <article class="border-t border-ne-bianco/30 pt-6">
+            <div
+              class="flex aspect-square items-center justify-center rounded-2xl bg-ne-bianco/15 p-5 text-center"
+              role="img"
+              aria-label="Spazio riservato alla futura fotografia dei cachi"
+            >
+              <p class="text-sm font-semibold">superfood-cachi.webp</p>
+            </div>
+            <p class="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-ne-indaco">
+              Inverno
+            </p>
+            <h3 class="mt-2 text-2xl font-bold">I cachi</h3>
+            <p class="mt-4 leading-relaxed text-ne-bianco/90">
+              La dolcezza e il colore di un frutto che accompagna il passaggio
+              verso la stagione fredda.
+            </p>
+          </article>
+        </div>
+
+        <div class="mt-14 border-l-4 border-ne-indaco pl-6">
+          <p class="max-w-4xl text-2xl font-semibold leading-relaxed">
+            Quattro prodotti molto diversi tra loro, accomunati dalla semplicità
+            della loro trasformazione e dal ritmo naturale della loro
+            produzione.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 – Piccoli gesti di nutrimento quotidiano -->
+    <section class="bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              Dal frutteto-giardino alla tavola
+            </p>
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              Piccoli gesti di nutrimento quotidiano
+            </h2>
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <p>
+                Non servono ricette elaborate o particolari rituali per
+                introdurre questi alimenti nella propria quotidianità.
+              </p>
+              <p>
+                I frutti essiccati possono accompagnare la colazione, arricchire
+                uno yogurt, un porridge o una preparazione casalinga, oppure
+                essere gustati semplicemente come spuntino durante la giornata.
+              </p>
+              <p>
+                La farina di ortica può diventare un ingrediente per la
+                preparazione di pasta fresca, pane, focacce, risotti, vellutate
+                e condimenti, donando colore e sapore anche ai piatti più
+                semplici.
+              </p>
+              <p>
+                Sono alimenti da conoscere attraverso il gusto, la curiosità e
+                la sperimentazione, da integrare con varietà e misura nella
+                propria alimentazione.
+              </p>
+            </div>
+            <div class="mt-10 border-l-4 border-ne-indaco pl-6">
+              <p class="text-2xl font-semibold leading-relaxed">
+                Non alimenti miracolosi, ma piccoli contributi a un modo di
+                nutrirsi più consapevole.
+              </p>
+            </div>
+          </div>
+
+          <!-- Segnaposto: sostituire con ../images/superfood-quotidianita.webp -->
+          <div
+            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-indaco/5 p-8 text-center text-ne-viola-spento"
+            role="img"
+            aria-label="Spazio riservato alla futura immagine dell'utilizzo domestico dei prodotti essiccati"
+          >
+            <p class="max-w-xs text-sm font-semibold leading-relaxed">
+              Immagine futura
+              <br />
+              superfood-quotidianita.webp
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 – La disponibilità la decide la natura -->
+    <section class="bg-ne-viola-spento text-ne-bianco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="max-w-4xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
+            Piccole produzioni stagionali
+          </p>
+          <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+            La disponibilità la decide la natura
+          </h2>
+          <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
+            <p>
+              Non coltivo per garantire una disponibilità costante di questi
+              prodotti durante tutto l'anno.
+            </p>
+            <p>
+              Le mie piccole produzioni di erbe e frutti essiccati nascono
+              esclusivamente dagli esuberi del raccolto del mio
+              frutteto-giardino.
+            </p>
+            <p>
+              Le quantità variano di anno in anno, così come variano le
+              condizioni climatiche, la maturazione dei frutti e la crescita
+              delle erbe spontanee.
+            </p>
+          </div>
+          <div class="mt-10 border-l-4 border-ne-indaco pl-6">
+            <p class="text-2xl font-semibold leading-relaxed text-ne-indaco">
+              Anche questo fa parte della scelta di assecondare le stagioni.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 – Approfondimento -->
+    <section class="border-b border-ne-indaco/15 bg-ne-bianco text-ne-indaco">
+      <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+          <!-- Segnaposto: sostituire con ../images/superfood-pieghevole.webp -->
+          <div
+            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-indaco/5 p-8 text-center text-ne-viola-spento"
+            role="img"
+            aria-label="Spazio riservato alla futura immagine della copertina del pieghevole Superfood"
+          >
+            <p class="max-w-xs text-sm font-semibold leading-relaxed">
+              Immagine futura
+              <br />
+              superfood-pieghevole.webp
+            </p>
+          </div>
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-viola-spento">
+              Per approfondire
+            </p>
+            <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
+              Conoscere meglio ogni prodotto
+            </h2>
+            <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-viola-spento sm:text-lg">
+              <p>
+                Ogni pianta e ogni frutto ha una propria identità,
+                caratteristiche nutrizionali differenti e specifiche possibilità
+                di utilizzo.
+              </p>
+              <p>
+                Ho raccolto in un piccolo pieghevole gli approfondimenti
+                dedicati ai quattro prodotti, insieme ad alcuni suggerimenti per
+                sperimentarli nella cucina di tutti i giorni.
+              </p>
+            </div>
+
+            <a
+              href={pdfUrl}
+              download
+              class="mt-10 inline-flex items-center justify-center rounded-full border-2 border-ne-indaco bg-ne-indaco px-8 py-3 font-semibold text-ne-bianco transition-colors hover:bg-ne-bianco hover:text-ne-indaco active:bg-ne-bianco active:text-ne-indaco"
+            >
+              Scarica il pieghevole SUPERFOOD
+            </a>
+
+            <p class="mt-3 text-sm text-ne-viola-spento">
+              Energia e benessere – Documento PDF
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
