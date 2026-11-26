@@ -77,41 +77,69 @@ const pdfUrl = "../downloads/superfood-energia-e-benessere.pdf";
     <section class="bg-ne-viola-spento text-ne-bianco">
       <div class="mx-auto max-w-6xl px-6 py-14 lg:px-8 lg:py-24">
         <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
-          <!-- Segnaposto: sostituire con ../images/superfood-raccolto.webp -->
-          <div
-            class="flex aspect-[4/3] items-center justify-center rounded-3xl bg-ne-bianco/15 p-8 text-center text-ne-bianco"
-            role="img"
-            aria-label="Spazio riservato alla futura immagine del raccolto del frutteto-giardino"
-          >
-            <p class="max-w-xs text-sm font-semibold leading-relaxed">
-              Immagine futura
-              <br />
-              superfood-raccolto.webp
-            </p>
+          <!-- Video e fotografia -->
+          <div class="space-y-6">
+            <!-- Video ortiche al vento -->
+            <div class="overflow-hidden rounded-3xl">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                controls
+                preload="metadata"
+                poster="/images/superfood-ortiche-cesto.webp"
+                class="aspect-[4/3] w-full object-cover"
+                aria-label="Ortichette mosse dal vento nel loro ambiente naturale"
+              >
+                <source
+                  src="/videos/superfood-ortiche-vento.mp4"
+                  type="video/mp4"
+                />
+                Il tuo browser non supporta la riproduzione video.
+              </video>
+            </div>
+
+            <!-- Fotografia del raccolto -->
+            <div class="overflow-hidden rounded-3xl">
+              <img
+                src="../images/superfood-ortiche-cesto.webp"
+                alt="Cesto colmo di ortiche appena raccolte"
+                loading="lazy"
+                decoding="async"
+                class="aspect-[4/3] w-full object-cover"
+              />
+            </div>
           </div>
 
+          <!-- Testo -->
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-ne-indaco">
               Assecondare le stagioni
             </p>
+
             <h2 class="mt-5 text-4xl font-bold leading-tight sm:text-5xl">
               Custodire l'abbondanza
             </h2>
+
             <div class="mt-8 space-y-5 text-base leading-relaxed text-ne-bianco/90 sm:text-lg">
               <p>
                 Nel mio frutteto-giardino ogni stagione ha qualcosa da offrire,
                 ma non sempre nelle stesse quantità.
               </p>
+
               <p>
                 Ci sono momenti in cui la natura è particolarmente generosa, in
                 cui i frutti maturano tutti insieme o le erbe spontanee crescono
                 rigogliose.
               </p>
+
               <p>
                 L'essiccazione nasce per me dal desiderio di custodire questa
                 abbondanza, di non sprecarla e di poterne godere anche quando il
                 tempo della raccolta è ormai trascorso.
               </p>
+
               <p>
                 È una delle più antiche tecniche di conservazione degli
                 alimenti, un modo semplice per accompagnare il prodotto fresco
